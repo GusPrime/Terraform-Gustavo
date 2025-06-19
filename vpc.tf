@@ -91,6 +91,11 @@ resource "aws_security_group" "grupo_seguridad_publico" {
 # }
 
 
+module "mi_modulo_bucket" {
+  source      = "./modulos/s3"
+  bucket_name = "complexless123456789"
+}
 
-
-
+output "s3_bucket_arn" {
+  value = module.mi_modulo_bucket.s3_bucket_arn
+}
