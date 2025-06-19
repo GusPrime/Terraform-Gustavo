@@ -60,3 +60,12 @@ variable "dynamic_gustavo" {
   description = "Valores para dynamic ingress"
   type        = list(number)
 }
+
+variable "access_key" {
+
+}
+
+
+variable "secret_key" {
+
+}
